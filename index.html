@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Flight Demon</title>
+
+    <!-- Include all css here -->
+    <!-- load bootstrap and some simple css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- include all js here -->
+    <!-- angular dependencies and polyfills for browser -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <!-- asynchronous tracking -->
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <!-- support for typescript annotations -->
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+    <!-- load system.js -->
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- specify the module mappings and  -->
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function(err) { console.error(err); });
+    </script>
+</head>
+<body class="container">
+
+    <flight-demon></flight-demon>
+    
+</body>
+</html>
